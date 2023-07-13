@@ -17,6 +17,7 @@ const NoFavorites = () => {
      width={250}
      height={250}
      css={{opacity:0.2}}
+     alt='error imagen'
    ></Image>
  </Container>
   )

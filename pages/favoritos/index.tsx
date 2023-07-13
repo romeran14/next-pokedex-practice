@@ -3,11 +3,10 @@ import { NextPage } from "next"
 import NoFavorites from "@/components/ui/NoFavorites"
 import { useState, useEffect } from "react"
 import { localFavorites } from "@/utils"
-import { Grid, Card } from "@nextui-org/react"
 import FavoritesPokemon from "@/components/pokemon/FavoritesPokemon"
 
 
-export const favoritosPage: NextPage = () => {
+export const FavoritosPage: NextPage = () => {
   const [pokemon, setpokemon] = useState<Number[]>([])
   useEffect(() => {
     setpokemon(localFavorites.pokemons())
@@ -24,4 +23,4 @@ export const favoritosPage: NextPage = () => {
   )
 }
 
-export default favoritosPage
+export default FavoritosPage
